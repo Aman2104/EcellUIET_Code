@@ -57,8 +57,7 @@ function Contactform() {
 							</div>
 							<div className="col-md-5 d-flex align-items-stretch">
 								<div id="map">
-									<iframe
-										src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.6303554317474!2d76.81124881413407!3d29.961309329452117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390e38b1c9410e23%3A0xff2e40965dcd7b69!2sUniversity%20Institute%20of%20Engineering%20and%20Technology%2C%20Kurukshetra%20University!5e0!3m2!1sen!2sin!4v1677816132269!5m2!1sen!2sin"
+									<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.6303554317474!2d76.81124881413407!3d29.961309329452117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390e38b1c9410e23%3A0xff2e40965dcd7b69!2sUniversity%20Institute%20of%20Engineering%20and%20Technology%2C%20Kurukshetra%20University!5e0!3m2!1sen!2sin!4v1677816132269!5m2!1sen!2sin"
 										width="100%" height="100%" style={{border:"0"}} allowFullScreen="" loading="lazy"
 										referrerPolicy="no-referrer-when-downgrade"></iframe>
 								</div>

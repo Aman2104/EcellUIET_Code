@@ -7,7 +7,7 @@ function Navbar() {
       <div className="logo">
         LOGO
       </div>
-      <label htmlFor="toggle">&#9776;</label>
+      <label className='hamburger' htmlFor="toggle">&#9776;</label>
       <input type="checkbox" id="toggle" />
       <ul className="menu">
         <li><a href="/">Home</a></li>

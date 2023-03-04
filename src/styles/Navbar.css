@@ -13,7 +13,7 @@ nav {
     font-size: 24px;
 }
 
-label {
+.hamburger {
     font-size: 28px;
     cursor: pointer;
     display: none;
@@ -42,7 +42,7 @@ label {
         font-size: 20px;
     }
 
-    label {
+    .hamburger {
         display: block;
     }
 
