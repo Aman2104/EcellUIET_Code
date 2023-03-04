@@ -6,7 +6,7 @@ function Mainpage() {
 
 
     return (
-
+ 
         <div>
             <Work workJSon = {workJSon} heading="Our work"/>
             <Work workJSon = {benefitJSon} heading="Benefits"/>

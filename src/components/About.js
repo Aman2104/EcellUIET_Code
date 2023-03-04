@@ -18,7 +18,7 @@ function About() {
                             entrepreneurs, mentors, angel investors and venture capitalists.</p>
                             <button className="btn btn-primary">Google Form</button>
                     </div>
-                </div>
+                </div> 
                 <div className="col-md-6">
                     <div className="about-img">
                         <img src={collegeImg} alt="E-cell UIET KUK"/>

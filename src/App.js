@@ -11,7 +11,7 @@ function App() {
       <Mainpage/>
       <Contactform/>
     </div>
-  );
+  ); 
 }
 
 export default App;

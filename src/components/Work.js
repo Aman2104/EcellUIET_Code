@@ -14,6 +14,6 @@ function Work(props) {
             </div>
         </section>
     )
-}
+} 
 
 export default Work
