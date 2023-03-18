@@ -8,7 +8,7 @@ function Contactform() {
   return (
 
 
-    <section className="ftco-section">
+    <section className="ftco-section py-3">
 		<div className="container">
 			<div className="row justify-content-center">
 				<div className="col-md-6 text-center mb-3">
@@ -63,14 +63,14 @@ function Contactform() {
 							</div> 
 							<div className="col-lg-5 d-flex align-items-stretch">
 								<div id="map">
-									<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.6303554317474!2d76.81124881413407!3d29.961309329452117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390e38b1c9410e23%3A0xff2e40965dcd7b69!2sUniversity%20Institute%20of%20Engineering%20and%20Technology%2C%20Kurukshetra%20University!5e0!3m2!1sen!2sin!4v1677816132269!5m2!1sen!2sin"
+									<iframe title='map' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.6303554317474!2d76.81124881413407!3d29.961309329452117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390e38b1c9410e23%3A0xff2e40965dcd7b69!2sUniversity%20Institute%20of%20Engineering%20and%20Technology%2C%20Kurukshetra%20University!5e0!3m2!1sen!2sin!4v1677816132269!5m2!1sen!2sin"
 										width="100%" height="100%" style={{border:"1px solid"}} allowFullScreen="" loading="lazy"
 										referrerPolicy="no-referrer-when-downgrade"></iframe>
 								</div>
 							</div>
 						</div>
 						<div className="row">
-							<div className="col-md-3">
+							<div className="col-md-4">
 								<div className="dbox w-100 text-center">
 									<div className="icon d-flex align-items-center justify-content-center">
 										<span className="fa fa-map-marker"></span>
@@ -80,23 +80,13 @@ function Contactform() {
 									</div>
 								</div>
 							</div>
-							<div className="col-md-3">
-								<div className="dbox w-100 text-center">
-									<div className="icon d-flex align-items-center justify-content-center">
-										<span className="fa fa-phone"></span>
-									</div>
-									<div className="text">
-										<p><span>Phone:</span> <a href="tel:">Mobile</a></p>
-									</div>
-								</div>
-							</div>
-							<div className="col-md-3">
+							<div className="col-md-4">
 								<div className="dbox w-100 text-center">
 									<div className="icon d-flex align-items-center justify-content-center">
 										<span className="fa fa-envelope"></span>
 									</div>
 									<div className="text">
-										<p><span>Email:</span> <a href="mailto:">Email Id</a>
+										<p><span>Email:</span> <a href="mailto:ecelluiet@kuk.ac.in">Email Id</a>
 										</p>
 									</div>
 								</div>

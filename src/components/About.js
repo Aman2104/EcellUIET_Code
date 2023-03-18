@@ -3,7 +3,7 @@ import collegeImg from '../assets/logos/uiet.png'
 import '../styles/about.css'
 function About() {
   return (
-    <section className="about-us" id="about">
+    <section className="about-us py-3" id="about">
         <div className="container ">
             <div className="row align-items-center">
                 <div className="col-md-6">

@@ -3,9 +3,10 @@
     text-align: center;
     position: absolute;
     width: 100%;
-    top: 100px;
+    top: 150px;
     left: 0;
-    padding: 20px 0;
+    z-index: 9999;
+    padding: 50px 0;
 }
 
 h1 {
@@ -27,7 +28,6 @@ h2 {
     background: #2553b8;
     border-color: #2553b8;
     color: #ffffff;
-    /* box-shadow: 0 0 25px #2553b8; */
     box-shadow: 0 0 5px #2553b8, 0 0 25px #2553b8;
     font-size: 18px;
     font-weight: bold;
@@ -57,46 +57,15 @@ h2 {
     border-right: none;
 }
 
-@keyframes scrollUp {
-    0% {
-        opacity: 1;
-        transform: none;
-        /* transform-origin: 50% 80% 0px; */
-    }
-
-    100% {
-        opacity: 0;
-        transform: scale(2) translateZ(0px);
-        /* transform-origin: 50% 80% 0px; */
-    }
-}
-
-@keyframes scrollDown {
-    0% {
-        opacity: 0;
-        transform: scale(2) translateZ(0px);
-        /* transform-origin: 50% 80% 0px; */
-    }
-
-    100% {
-        opacity: 1;
-        transform: none;
-        /* transform-origin: 50% 80% 0px; */
-    }
-
-}
-
 @keyframes swipeLeft {
     0% {
         opacity: 0;
         transform: none;
-        /* transform-origin: 50% 80% 0px; */
     }
 
     100% {
         opacity: 1;
         transform: translateX(-100%);
-        /* transform-origin: 50% 80% 0px; */
     }
 
 }
@@ -105,13 +74,11 @@ h2 {
     0% {
         opacity: 0;
         transform: translateX(100%);
-        /* transform-origin: 50% 80% 0px; */
     }
 
     100% {
         opacity: 1;
         transform: none;
-        /* transform-origin: 50% 80% 0px; */
     }
 
 }

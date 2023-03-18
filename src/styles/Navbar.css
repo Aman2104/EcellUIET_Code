@@ -1,12 +1,12 @@
 header{
-    background-color: #333;
+    background-color: black;
 }
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: #fff;
-    padding: 20px;
+    padding: 0 20px;
 }
 
 #toggle {
@@ -35,7 +35,11 @@ nav {
 }
 
 .menu li {
-    margin-right: 20px;
+    margin-left: 20px;
+    padding: 0 10px;
+}
+.menu li:hover{
+    border-bottom: 2px solid #2553b8;
 }
 
 .menu a {
@@ -43,15 +47,10 @@ nav {
     text-decoration: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 994px) {
     .logo {
         font-size: 20px;
     }
-
-    /* 
-    .toggle {
-        display: block;
-    } */
 
     .menu {
         position: absolute;
@@ -59,7 +58,7 @@ nav {
         left: 0;
         width: 100%;
         flex-direction: column;
-        background-color: #444;
+        background-color: black;
         z-index: 1;
         opacity: 0;
         visibility: hidden;
