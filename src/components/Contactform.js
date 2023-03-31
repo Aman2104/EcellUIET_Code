@@ -22,7 +22,7 @@ function Contactform() {
 							<div className="col-lg-7">
 								<div className="contact-wrap w-100 p-md-5 p-4">
 									<h3 className="mb-4">Contact Us</h3>
-									<form method="POST" id="contactForm" name="contactForm" className="contactForm">
+									<form action="https://formsubmit.co/1347872e09c810e7a154f200d3033ce8" method="POST" id="contactForm" name="contactForm" className="contactForm">
 										<div className="row">
 											<div className="col-md-6 mb-3">
 												<div className="form-group">

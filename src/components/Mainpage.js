@@ -1,8 +1,10 @@
 import React from 'react'
 import Work from './Work'
 import Team from './Team'
-
-
+import LandingPage from './LandingPage'
+import Corousel from './CorouselItem'
+import About from './About'
+import Contactform from './Contactform'
 
 
 import direc from '../assets/coordinators/direc.png'
@@ -35,7 +37,6 @@ import nidhi from '../assets/core team/nidhiverma.png'
 import puneet from '../assets/core team/puneet.png'
 import radhika from '../assets/core team/RADHIKA.png'
 import rajat from '../assets/core team/Rajat.png'
-import riya from '../assets/core team/riyadhemival.png'
 import shankar from '../assets/core team/Shankar.png'
 import shivani from '../assets/core team/SHIVANI.png'
 import sonu from '../assets/core team/sonuyadav.png'
@@ -51,11 +52,11 @@ import yash from '../assets/core team/yashpalgoyal.png'
 function Mainpage() {
     const benefitJSon = [{ "Name": "Accelerate your idea", "icon": "fa-tachometer-alt", "statement": "Our program is designed to help you speed up the process of developing and launching your idea." }, { "Name": "Interactions with successful entrepreneurs", "icon": "fa-users", "statement": "Get the opportunity to interact with successful entrepreneurs who can share their experiences and insights with you." }, { "Name": "Mentorship by experts", "icon": "fa-chalkboard-teacher", "statement": "Our experienced mentors will guide and support you through every step of your entrepreneurial journey." }, { "Name": "Monetary support", "icon": "fa-money-bill-wave", "statement": "We provide financial support to help you fund your idea and bring it to life." }, { "Name": "Converting Idea into business models", "icon": "fa-chart-line", "statement": "We'll help you turn your idea into a viable and sustainable business model that can succeed in the marketplace." }, { "Name": "Linking startups and budding entrepreneurs in an informal way.", "icon": "fa-link", "statement": "We connect startups and entrepreneurs in an informal and collaborative environment where they can share ideas and support each other." }, { "Name": "Providing a platform for turning your ideas to reality", "icon": "fa-rocket", "statement": "Our platform is designed to help you turn your ideas into reality by providing the resources, support, and guidance you need to succeed." }]
     const workJSon = [{ "Name": "Ideate", "icon": "fa-lightbulb", "statement": "Generate new ideas and concepts", "description": "Brainstorm and create new ideas for products, services, or processes." }, { "Name": "Innovate", "icon": "fa-cogs", "statement": "Implement new ideas and concepts", "description": "Bring new ideas to life through research, development, and implementation." }, { "Name": "Incubate", "icon": "fa-rocket", "statement": "Nurture early-stage startups", "description": "Provide support, resources, and guidance to help startups grow and succeed." }]
-    const coordinator =[
+    const coordinator = [
         {
             "Name": "Prof. Sunil Dhingra",
             "Designation": "Director, UIET and Head, IIC",
-            "Photo" :`${direc}`,
+            "Photo": `${direc}`,
             "Instagram": "",
             "LinkedIn": "",
             "Twitter": "",
@@ -64,7 +65,7 @@ function Mainpage() {
         {
             "Name": "Dr. Vishal Ahlawat",
             "Designation": "Convener and IIC President",
-            "Photo" :`${teacher1}`,
+            "Photo": `${teacher1}`,
             "Instagram": "",
             "LinkedIn": "",
             "Twitter": "",
@@ -73,7 +74,7 @@ function Mainpage() {
         {
             "Name": "Dr. Kulvinder Singh",
             "Designation": "Incharge, Community Incubation Centre",
-            "Photo" :`${teacher12}`,
+            "Photo": `${teacher12}`,
             "Instagram": "",
             "LinkedIn": "",
             "Twitter": "",
@@ -82,7 +83,7 @@ function Mainpage() {
         {
             "Name": "Dr. Sunil Nain",
             "Designation": "Vice President",
-            "Photo" :`${teacher7}`,
+            "Photo": `${teacher7}`,
             "Instagram": "",
             "LinkedIn": "",
             "Twitter": "",
@@ -91,7 +92,7 @@ function Mainpage() {
         {
             "Name": "Mr. Archit Sharma",
             "Designation": "IPR Activity Coordinator",
-            "Photo" :`${teacher2}`,
+            "Photo": `${teacher2}`,
             "Instagram": "",
             "LinkedIn": "",
             "Twitter": "",
@@ -100,7 +101,7 @@ function Mainpage() {
         {
             "Name": "Mr. Ravinder",
             "Designation": "Internship Activity Coordinator",
-            "Photo" :`${teacher5}`,
+            "Photo": `${teacher5}`,
             "Instagram": "",
             "LinkedIn": "",
             "Twitter": "",
@@ -109,7 +110,7 @@ function Mainpage() {
         {
             "Name": "Dr. Chander Diwakar",
             "Designation": "ARIIA Coordinator and Member",
-            "Photo" :`${cd}`,
+            "Photo": `${cd}`,
             "Instagram": "",
             "LinkedIn": "",
             "Twitter": "",
@@ -118,7 +119,7 @@ function Mainpage() {
         {
             "Name": "Dr. Deepak Malik",
             "Designation": "Innovation Activity and Member",
-            "Photo" :`${dm}`,
+            "Photo": `${dm}`,
             "Instagram": "",
             "LinkedIn": "",
             "Twitter": "",
@@ -127,7 +128,7 @@ function Mainpage() {
         {
             "Name": "Ms. Shivani",
             "Designation": "Social Media and Member",
-            "Photo" :`${sc}`,
+            "Photo": `${sc}`,
             "Instagram": "",
             "LinkedIn": "",
             "Twitter": "",
@@ -136,7 +137,7 @@ function Mainpage() {
         {
             "Name": "Ms. Sonia Saini",
             "Designation": "ARIIA Coordinator and Member",
-            "Photo" :`${ss}`,
+            "Photo": `${ss}`,
             "Instagram": "",
             "LinkedIn": "",
             "Twitter": "",
@@ -188,7 +189,7 @@ function Mainpage() {
         {
             "num": "4",
             "Name": "GAJENDER YADAV",
-            "Designation":`Web Developer`,
+            "Designation": `Web Developer`,
             "Photo": `${gajender}`,
             "Instagram": "https://www.instagram.com/er._gajendra_yadav/",
             "LinkedIn": "https://www.linkedin.com/in/gajender-yadav-452564166",
@@ -198,7 +199,7 @@ function Mainpage() {
         {
             "num": "5",
             "Name": "Shankar Dev",
-            "Designation": "Web Development",
+            "Designation": "Web Developer",
             "Photo": `${shankar}`,
             "Instagram": "https://instagram.com/shankarmalik022?igshid=YmMyMTA2M2Y=",
             "LinkedIn": "https://github.com/Shankarmalik002",
@@ -214,16 +215,6 @@ function Mainpage() {
             "LinkedIn": "https://linkedin.com/in/aman-kumar-Aman2104",
             "Twitter": "https://twitter.com/Amanyara21",
             "Github": "https://github.com/Aman2104"
-        },
-        {
-            "num": "7",
-            "Name": "Riya Dehimiwal",
-            "Designation": "Anchor",
-            "Photo": `${riya}`,
-            "Instagram": "riya_dehimiwal",
-            "LinkedIn": "https://www.linkedin.com/in/riyadehimiwal",
-            "Twitter": "",
-            "Github": ""
         },
         {
             "num": "8",
@@ -259,7 +250,7 @@ function Mainpage() {
             "num": "11",
             "Name": "Sumit raj",
             "Designation": "Graphics Designer",
-            "Photo":` ${sumit}`,
+            "Photo": ` ${sumit}`,
             "Instagram": "https://instagram.com/sumit_raj027?igshid=ZDdkNTZiNTM=",
             "LinkedIn": "https://www.linkedin.com/in/sumit-raj-51163122a",
             "Twitter": "",
@@ -280,7 +271,7 @@ function Mainpage() {
             "num": "13",
             "Name": "Umakshi",
             "Designation": "Content writer",
-            "Photo":`${umakshi}`,
+            "Photo": `${umakshi}`,
             "Instagram": "",
             "LinkedIn": "http://www.linkedin.com/in/umakshi-sharma-163302206",
             "Twitter": "",
@@ -290,7 +281,7 @@ function Mainpage() {
             "num": "14",
             "Name": "Tanishq Garg",
             "Designation": "Content writer",
-            "Photo":`${tanishq}`,
+            "Photo": `${tanishq}`,
             "Instagram": "its.me_tanishq.garg",
             "LinkedIn": "https://www.linkedin.com/in/tanishq-garg-a6288822b",
             "Twitter": "@a_GARG_product",
@@ -353,7 +344,7 @@ function Mainpage() {
         {
             "num": "20",
             "Name": "Agrim Gupta",
-            "Designation": "Promotions and Marketing",
+            "Designation": "Marketing and Promotions",
             "Photo": `${agrim}`,
             "Instagram": "https://instagram.com/agrim___07?igshid=ZDdkNTZiNTM=",
             "LinkedIn": "https://www.linkedin.com/in/agrim-gupta-60b230244",
@@ -363,7 +354,7 @@ function Mainpage() {
         {
             "num": "21",
             "Name": "Naman",
-            "Designation": "Promotion Team",
+            "Designation": "Marketing and Promotions",
             "Photo": `${naman}`,
             "Instagram": "",
             "LinkedIn": "https://www.linkedin.com/in/naman-saini-615279225",
@@ -373,7 +364,7 @@ function Mainpage() {
         {
             "num": "22",
             "Name": "Arjav Verma",
-            "Designation": "Promotions Team Member",
+            "Designation": "Marketing and Promotions",
             "Photo": `${arjav}`,
             "Instagram": "https://instagram.com/arjav_verma?igshid=ZDdkNTZiNTM=",
             "LinkedIn": "https://www.linkedin.com/in/arjav-verma",
@@ -395,7 +386,7 @@ function Mainpage() {
         {
             "num": "24",
             "Name": "Puneet verma",
-            "Designation": "video editor",
+            "Designation": "Video editor",
             "Photo": `${puneet}`,
             "Instagram": "",
             "LinkedIn": "https://www.linkedin.com/in/puneet-kumar-180a3a21b/",
@@ -428,13 +419,14 @@ function Mainpage() {
     return (
 
         <div>
+            <LandingPage />
+            <Corousel />
+            <About />
             <Work workJSon={workJSon} heading="Our work" />
             <Work workJSon={benefitJSon} heading="Benefits" />
-            
-            <Team heading = "Teacher Coordinators" TeamJSon={coordinator}/>
-            <Team heading = "Core Team" TeamJSon={TeamMembers}/>
-
-            
+            <Team heading="Teacher Coordinators" TeamJSon={coordinator} />
+            <Team heading="Core Team" TeamJSon={TeamMembers} />
+            <Contactform />
         </div>
     )
 }

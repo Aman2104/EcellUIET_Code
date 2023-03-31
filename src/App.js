@@ -1,25 +1,36 @@
+import react from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
 import Navbar from './components/Navbar'
-import LandingPage from './components/LandingPage'
-import Corousel from './components/CorouselItem'
-import About from './components/About'
 import Mainpage from './components/Mainpage'
-import Contactform from './components/Contactform'
+
 import Handles from './components/Handles'
+import PastEvents from './components/PastEvents'
+import IIC from './components/IIC'
+import Gallery from './components/Gallery'
 import Footer from './components/Footer'
+
 function App() {
   return (
-    <div className="App">
-      <Navbar/>
-      <LandingPage/>
-      <Corousel/>
-      <About/>
-      <Mainpage/>
-      <Contactform/>
-      <Handles/>
-      <Footer/>
-    </div>
-  ); 
+    <BrowserRouter>
+      <div className="App">
+
+
+        <Navbar />
+        <Routes>
+          <Route exact path="/" element={<Mainpage/>} />
+          <Route path="/iic" element={<IIC/>} />
+          <Route path="/pastevents" element={<PastEvents/>} />
+          <Route path="/gallery" element={<Gallery/>} />
+        </Routes>
+       
+       
+        <Handles />
+        <Footer />
+
+      </div>
+    </BrowserRouter>
+  );
 }
 
 export default App;

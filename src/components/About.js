@@ -1,8 +1,18 @@
-import React from 'react'
+import React, {useState} from 'react'
 import collegeImg from '../assets/logos/uiet.png'
 import '../styles/about.css'
 function About() {
+    const [isClicked, setIsClicked] = useState(false);
+    const handleClick = () => {
+        if(isClicked){
+            setIsClicked(false);
+        }
+        else{
+        setIsClicked(true);
+        }
+      };
   return (
+    <>
     <section className="about-us py-3" id="about">
         <div className="container ">
             <div className="row align-items-center">
@@ -16,7 +26,7 @@ function About() {
                             strive towards continually. We enable smooth and efficient interaction between its principal
                             components spanning students, faculty, working professionals, aspiring and existing
                             entrepreneurs, mentors, angel investors and venture capitalists.</p>
-                            <button className="btn btn-primary">Google Form</button>
+                            <button className="btn btn-primary" onClick={handleClick}>Google Form</button>
                     </div>
                 </div> 
                 <div className="col-md-6">
@@ -26,7 +36,15 @@ function About() {
                 </div>
             </div>
         </div>
+        
     </section>
+    <section>
+        {isClicked && (
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe5xGeQiI7I3NUYzrbw3_bJMoH__YTEdL-Jb8XxVZpd_EdAPw/viewform?embedded=true" width="100%" style={{height:'100vh'}} frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+          )}
+    </section>
+    </>
+    
   )
 }
 
