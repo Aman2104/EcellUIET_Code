@@ -51,3 +51,9 @@ img:hover {
 a {
     cursor: pointer;
 }
+
+@media (max-width: 994px) {
+    .card{
+        width: 100%!important;
+    }
+}
